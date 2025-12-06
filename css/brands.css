@@ -302,9 +302,9 @@
 
 /* Ko-fi */
 .button-ko-fi {
-	--button-text:#ffffff;
-	--button-background:#000000;
-  --button-border:1px solid #FFFFFF;
+	--button-text:#202020;
+	--button-background:#f4efe7;
+	--button-border:1px solid #202020;
 }
 
 /* Last.fm */

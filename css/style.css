@@ -226,21 +226,7 @@ a:hover {
 	object-fit: cover;
 	background-position: center;
 	margin-bottom: var(--spacing-l);
-  }
-
-   /* Modifier for no avatar rounding */
-   .avatar--none {
-	border-radius: 0%;
-  }
-
-  /* Modifier for rounded avatar */
-  .avatar--rounded {
-	border-radius: 50%;
-  }
-
-  /* Modifier for slightly rounded corners */
-  .avatar--soft {
-	border-radius: 0.5rem;   /* 8px rounded corners */
+	border-radius: 2rem;
   }
 
 /* Theme System
