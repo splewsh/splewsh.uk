@@ -40,7 +40,6 @@ CONTRIBUTING*
 
 # Keep only essential files for the static website
 !index.html
-!privacy.html
 !css/
 !images/
 !fonts/

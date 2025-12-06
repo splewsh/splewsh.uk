@@ -76,7 +76,7 @@
 /* Typography
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
   h1 {
-	margin:0 0 0.5rem 0;
+	margin:0;
 	font-size:3rem;         		/* 48px */
     font-weight:800;
 	line-height:1;
@@ -86,7 +86,7 @@
 	hyphens:auto;           		/* Delete this to remove automatic hyphen on line break */
 }
 .container p {
-	margin:0 0 2rem 0;
+	margin:0 0 1rem 0;
 }
 
 /* Base Typography Settings
@@ -125,7 +125,7 @@
 
 /* Typography Scale */
 h1 {
-	margin:0 0 var(--spacing-m) 0;
+	margin:0 0 0.5rem 0;
 	font-size:var(--scale-5);           /* ~49px */
   	font-weight:800;
 	line-height:1.1;
@@ -138,7 +138,7 @@ body {
   	line-height:1.6;
 }
 .container p {
-	margin:0 0 var(--spacing-xl) 0;
+	margin:0 0 1rem 0;
 	font-size:var(--scale-1);
 	line-height:1.6;
 }
@@ -153,25 +153,6 @@ body {
 footer {
 	margin:var(--spacing-xxl) 0;            /* 4rem (64px) top and bottom */
     font-size:var(--scale-0);
-}
-
-/* Responsive adjustments */
-@media (max-width:34.375rem) {              /* 550px */
-  h1 {
-	font-size:var(--scale-4);
-}
-body {
-	font-size:var(--scale-0);
-}
-.container p {
-	font-size:var(--scale-0);
-}
-.avatar {
-	margin-bottom:var(--spacing-m);
-}
-footer {
-	margin:var(--spacing-xl) 0;         	/* 3rem (48px) top and bottom */
-}
 }
 
 /* Links
@@ -277,59 +258,6 @@ a:hover {
     –––––––––––––––––––––––––––––––––––––––––––––––––– */
     .button:hover,button:hover {
 	color:var(--button-text);
-}
-
-/* Responsive Typography
-  –––––––––––––––––––––––––––––––––––––––––––––––––– */
-  @media (max-width:34.375rem) {            /* 550px */
-    h1 {
-	font-size:2rem;                         /* 32px */
-	}
-	body {
-	font-size:1rem;                    		/* 16px */
-	}
-}
-
-/* Privacy Page Styles
-  –––––––––––––––––––––––––––––––––––––––––––––––––– */
-nav {
-	margin:var(--spacing-l) 0;
-	text-align:left;
-}
-section {
-	margin:var(--spacing-xl) 0;
-	text-align:left;
-}
-h2 {
-	font-size:var(--scale-3);
-	font-weight:700;
-	margin-bottom:var(--spacing-m);
-}
-h3 {
-	font-size:var(--scale-2);
-	font-weight:600;
-	margin:var(--spacing-l) 0 var(--spacing-s) 0;
-}
-ul {
-	list-style:none;
-	padding:0;
-	margin:0 0 var(--spacing-m) 0;
-}
-ul li {
-	margin-bottom:var(--spacing-xs);
-}
-
-/* Privacy page specific responsive adjustments */
-  @media (max-width:34.375rem) {
-	h2 {
-	font-size:var(--scale-2);
-	}
-	h3 {
-	font-size:var(--scale-1);
-	}
-	section {
-	margin:var(--spacing-l) 0;
-	}
 }
 
 /* Font Face Definitions
