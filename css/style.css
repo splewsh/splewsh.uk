@@ -117,7 +117,7 @@
 	border-radius: 50%;
 	object-fit: cover;
 	background-position: center;
-	margin-bottom: var(--spacing-l);
+	margin-bottom: var(--spacing-s);
 	margin-left: auto;
 	margin-right: auto;
 	display: block;
@@ -206,8 +206,8 @@ a:hover {
 	height: 8rem;
 	object-fit: cover;
 	background-position: center;
-	margin-bottom: var(--spacing-l);
-	border-radius: 2rem;
+	margin-bottom: var(--spacing-s);
+	border-radius: 100px;
   }
 
 /* Theme System
