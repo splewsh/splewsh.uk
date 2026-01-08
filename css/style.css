@@ -19,7 +19,7 @@
 	max-width:37.5rem;     				/* 600px */
     text-align:center;
 	margin:0 auto;
-	padding:3rem 1.25rem 0 1.25rem;
+	padding:1.25rem 1.25rem 0 1.25rem;
 	box-sizing:border-box;
 }
 .container-left {
@@ -133,6 +133,12 @@ h1 {
 	word-wrap:break-word;
 	overflow-wrap:break-word;
 }
+.container h2 {
+	margin:0;
+	padding:0 0 0.75rem 0;
+	font-size:var(--scale-3);           /* 31px */
+	font-weight:700;
+}
 body {
 	font-size:var(--scale-1);           /* 20px */
   	line-height:1.6;
@@ -145,7 +151,7 @@ body {
 
 /* Container spacing */
 .container {
-	padding:var(--spacing-xl) var(--spacing-m) 0 var(--spacing-m);
+	padding:var(--spacing-m) var(--spacing-m) 0 var(--spacing-m);
 	text-align:center;
 }
 
