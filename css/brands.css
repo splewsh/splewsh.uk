@@ -627,9 +627,9 @@
 
 /* Zoom */
 .button-zoom {
-	--button-text:#ffffff;
-	--button-background:#0B5CFF;
-  --button-border:1px solid #FFFFFF;
+	--button-text: #ffffff;
+	--button-background: #0B5CFF;
+    --button-border: 1px solid #FFFFFF;
 }
 
 /* Modrinth */
@@ -637,4 +637,11 @@
     --button-text: #000000;
     --button-background: #1bd96a;
     --button-border: 1px solid #000000;
+}
+
+/* FA */
+.button-fa {
+    --button-text: #add8f5;
+    --button-background: #20242a;
+    --button-border: 1px solid #69697d;
 }
