@@ -660,6 +660,13 @@
     --button-border: 2px solid #FFFFFF;
 }
 
+/* Ultraservers */
+.button-ultraservers {
+    --button-text: #ffffff;
+    --button-background: #191d23;
+    --button-border: 1px solid #FFFFFF;
+}
+
 /* Jestr */
 .button-jestr {
     --button-text: #ffffff;
