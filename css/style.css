@@ -133,7 +133,7 @@ body {
 .container p {
 	margin:0 0 1rem 0;
 	font-size:var(--scale-1);
-	line-height:1.6;
+	line-height:1.4;
 }
 
 /* Container spacing */
