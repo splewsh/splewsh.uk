@@ -673,3 +673,10 @@
     --button-background: #000000;
     --button-border: 1px solid #FFFFFF;
 }
+
+/* Voicemod */
+.button-voicemod {
+    --button-text: #00fff6;
+    --button-background: #1a1f1f;
+    --button-border: 1px solid #FFFFFF;
+}
