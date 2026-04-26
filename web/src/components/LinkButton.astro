@@ -1,0 +1,11 @@
+---
+import '../styles/brands.css';
+import '../styles/reset.css';
+import '../styles/style.css';
+
+const { label, href, icon, ext = "svg", class: cls } = Astro.props;
+---
+<a class={`button ${cls}`} href={href} target="_blank" rel="noopener" role="button">
+  <img class="icon" src={`/images/icons/${icon}.${ext}`} alt={`${label} icon`} aria-hidden="true" />
+  {label}
+</a>

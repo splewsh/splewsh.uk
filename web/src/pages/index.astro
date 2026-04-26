@@ -1,0 +1,76 @@
+---
+import Dropdown from "../components/Dropdown.astro";
+import LinkButton from "../components/LinkButton.astro";
+
+import '../styles/brands.css';
+import '../styles/reset.css';
+import '../styles/style.css';
+
+const activeLinks = [
+  { label: "Ko-fi", href: "https://ko-fi.com/splewsh", icon: "ko-fi", class: "button-ko-fi" },
+  { label: "X (Twitter)", href: "https://x.com/splewshYT", icon: "x", class: "button-x" },
+  { label: "Splewsh", href: "https://www.youtube.com/@splewsh", icon: "youtube", class: "button-yt" },
+  { label: "SplewshTalks", href: "https://www.youtube.com/@SplewshTalks", icon: "youtube", class: "button-yt" },
+  { label: "SplewshTV", href: "https://www.youtube.com/@SplewshTV", icon: "youtube", class: "button-yt" },
+  { label: "TikTok", href: "https://www.tiktok.com/@splewsh", icon: "tiktok", class: "button-tiktok" },
+  { label: "GitHub", href: "https://github.com/splewsh", icon: "github", class: "button-github" },
+  { label: "Modrinth", href: "https://modrinth.com/user/splewsh", icon: "modrinth", class: "button-modrinth" },
+  { label: "MapVerse", href: "https://mapverse.net/user/576", icon: "mapverse", class: "button-mapverse" },
+];
+
+const rareLinks = [
+  { label: "FurAffinity", href: "https://www.furaffinity.net/user/splewsh", icon: "fa_logo", ext: "png", class: "button-fa" },
+  { label: "Twitch", href: "https://www.twitch.tv/splewshyt", icon: "twitch", class: "button-twitch" },
+  { label: "Reddit", href: "https://www.reddit.com/user/splewshYT/", icon: "reddit", class: "button-reddit" },
+  { label: "Substack", href: "https://splewsh.substack.com", icon: "substack", class: "button-substack" },
+  { label: "Bluesky", href: "https://bsky.app/profile/splewsh.uk", icon: "bluesky", class: "button-bluesky" },
+];
+
+const affiliateLinks = [
+  { label: "Ultraservers", href: "https://ultraservers.com/stovonson", icon: "ultraservers", class: "button-ultraservers" },
+  { label: "Jestr", href: "https://www.jestr.gg/?ref=SUXUQW", icon: "jestr", class: "button-jestr" },
+  { label: "Voicemod", href: "https://x.la/l/p8fECns2", icon: "voicemod", class: "button-voicemod" },
+];
+---
+
+<html lang="en" class="theme-auto">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Splewsh</title>
+	<link rel="icon" type="image/x-icon" href="/images/transparent.svg" />
+	<meta name="description" content="the master of everything." />
+</head>
+<body>
+	<div class="container">
+		<div class="column">
+		<img class="avatar" src="/images/avatar.svg" alt="Splewsh logo" />
+		<h1>Splewsh</h1>
+		<p>the master of everything.</p>
+
+		<div class="button-stack" role="navigation">
+
+			<Dropdown title="I'm active on:" open>
+			{activeLinks.map(l => <LinkButton {...l} />)}
+			</Dropdown>
+
+			<Dropdown title="Don't use often:">
+			{rareLinks.map(l => <LinkButton {...l} />)}
+			</Dropdown>
+
+			<Dropdown title="Affiliate Links" open>
+			{affiliateLinks.map(l => <LinkButton {...l} />)}
+			</Dropdown>
+
+			<div class="contact-info">
+			<a href="mailto:splewsh@proton.me">splewsh@proton.me</a>
+			<div class="discord-link">
+				<img class="icon" src="/images/icons/discord.svg" alt="Discord" />
+				<span>: @splewshyt</span>
+			</div>
+			</div>
+		</div>
+		</div>
+	</div>
+</body>
+</html>
