@@ -44,32 +44,32 @@ const affiliateLinks = [
 <body>
 	<div class="container">
 		<div class="column">
-		<img class="avatar" src="/images/avatar.svg" alt="Splewsh logo" />
-		<h1>Splewsh</h1>
-		<p>the master of everything.</p>
+			<img class="avatar" src="/images/avatar.svg" alt="Splewsh logo" />
+			<h1>Splewsh</h1>
+			<p>the master of everything.</p>
 
-		<div class="button-stack" role="navigation">
+			<div class="button-stack" role="navigation">
 
-			<Dropdown title="I'm active on:" open>
-			{activeLinks.map(l => <LinkButton {...l} />)}
-			</Dropdown>
+				<Dropdown title="I'm active on:" open>
+				{activeLinks.map(l => <LinkButton {...l} />)}
+				</Dropdown>
 
-			<Dropdown title="Don't use often:">
-			{rareLinks.map(l => <LinkButton {...l} />)}
-			</Dropdown>
+				<Dropdown title="Don't use often:">
+				{rareLinks.map(l => <LinkButton {...l} />)}
+				</Dropdown>
 
-			<Dropdown title="Affiliate Links" open>
-			{affiliateLinks.map(l => <LinkButton {...l} />)}
-			</Dropdown>
+				<Dropdown title="Affiliate Links" open>
+				{affiliateLinks.map(l => <LinkButton {...l} />)}
+				</Dropdown>
 
-			<div class="contact-info">
-			<a href="mailto:splewsh@proton.me">splewsh@proton.me</a>
-			<div class="discord-link">
-				<img class="icon" src="/images/icons/discord.svg" alt="Discord" />
-				<span>: @splewshyt</span>
+				<div class="contact-info">
+					<a href="mailto:splewsh@proton.me">splewsh@proton.me</a>
+					<div class="discord-link">
+						<img class="icon" src="/images/icons/discord.svg" alt="Discord" />
+						<span>: @splewshyt</span>
+					</div>
+				</div>
 			</div>
-			</div>
-		</div>
 		</div>
 	</div>
 </body>
