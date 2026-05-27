@@ -680,3 +680,10 @@
     --button-background: #1a1f1f;
     --button-border: 1px solid #FFFFFF;
 }
+
+/* LittleLink */
+.button-littlelink {
+    --button-text: #f164c6;
+    --button-background: #27282c;
+    --button-border: 1px solid #FFFFFF;
+}
