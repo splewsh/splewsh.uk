@@ -32,6 +32,10 @@ const affiliateLinks = [
   { label: "Jestr", href: "https://www.jestr.gg/?ref=SUXUQW", icon: "jestr", class: "button-jestr" },
   { label: "Voicemod", href: "https://x.la/l/p8fECns2", icon: "voicemod", class: "button-voicemod" },
 ];
+
+const isPrideMonth = new Date().getMonth() === 5;
+const avatarSrc = isPrideMonth ? '/images/pride.svg' : '/images/avatar.svg';
+const faviconSrc = isPrideMonth ? '/images/transparent-pride.svg' : '/images/transparent.svg';
 ---
 
 <html lang="en" class="theme-auto">
@@ -39,13 +43,13 @@ const affiliateLinks = [
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<title>Splewsh</title>
-	<link rel="icon" type="image/x-icon" href="/images/transparent.svg" />
+	<link rel="icon" type="image/svg+xml" href={faviconSrc} />
 	<meta name="description" content="the master of everything." />
 </head>
 <body>
 	<div class="container">
 		<div class="column">
-			<img class="avatar" src="/images/avatar.svg" alt="Splewsh logo" />
+			<img class="avatar" src={avatarSrc} alt="Splewsh logo" />
 			<h1>Splewsh</h1>
 			<p>the master of everything.</p>
 
