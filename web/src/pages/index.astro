@@ -7,24 +7,9 @@ import '../styles/reset.css';
 import '../styles/style.css';
 
 const activeLinks = [
-  { label: "Ko-fi", href: "https://ko-fi.com/splewsh", icon: "ko-fi", class: "button-ko-fi" },
   { label: "Splewsh", href: "https://www.youtube.com/@splewsh", icon: "youtube", class: "button-yt" },
-  { label: "SplewshTalks", href: "https://www.youtube.com/@SplewshTalks", icon: "youtube", class: "button-yt" },
   { label: "X (Twitter)", href: "https://x.com/splewshYT", icon: "x", class: "button-x" },
   { label: "TikTok", href: "https://www.tiktok.com/@splewsh", icon: "tiktok", class: "button-tiktok" },
-  { label: "Modrinth", href: "https://modrinth.com/user/splewsh", icon: "modrinth", class: "button-modrinth" },
-  { label: "MapVerse", href: "https://mapverse.net/user/splewsh", icon: "mapverse", class: "button-mapverse" },
-  { label: "Pronouns.page", href: "https://en.pronouns.page/@Splewsh", icon: "pronouns-page", class: "button-pronouns-page" },
-];
-
-const rareLinks = [
-  { label: "SplewshTV", href: "https://www.youtube.com/@SplewshTV", icon: "youtube", class: "button-yt" },
-  { label: "GitHub", href: "https://github.com/splewsh", icon: "github", class: "button-github" },
-  { label: "Reddit", href: "https://www.reddit.com/user/splewshYT/", icon: "reddit", class: "button-reddit" },
-  { label: "Bluesky", href: "https://bsky.app/profile/splewsh.uk", icon: "bluesky", class: "button-bluesky" },
-  { label: "Twitch", href: "https://www.twitch.tv/splewshyt", icon: "twitch", class: "button-twitch" },
-  { label: "Substack", href: "https://splewsh.substack.com", icon: "substack", class: "button-substack" },
-  { label: "FurAffinity", href: "https://www.furaffinity.net/user/splewsh", icon: "fa_logo", ext: "png", class: "button-fa" },
 ];
 
 const affiliateLinks = [
@@ -33,25 +18,24 @@ const affiliateLinks = [
   { label: "Voicemod", href: "https://x.la/l/p8fECns2", icon: "voicemod", class: "button-voicemod" },
 ];
 
-const isPrideMonth = new Date().getMonth() === 5;
-const avatarSrc = isPrideMonth ? '/images/avatar.svg': '/images/pride.svg';
-const faviconSrc = isPrideMonth ? '/images/transparent.svg' : '/images/transparent-pride.svg';
+const faviconSrc = '/images/transparent.svg';
 ---
 
 <html lang="en" class="theme-auto">
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<title>Splewsh</title>
+	<title>Splewsh - ARCHIVED</title>
 	<link rel="icon" type="image/svg+xml" href={faviconSrc} />
 	<meta name="description" content="the master of everything." />
 </head>
 <body>
 	<div class="container">
 		<div class="column">
-			<img class="avatar" src={avatarSrc} alt="Splewsh logo" />
-			<h1>Splewsh</h1>
-			<p>the master of everything.</p>
+			<div class="archival">
+				<p>Splewsh has been archived.</p>
+				<p><a href="https://tucv.substack.com/p/im-so-tired-of-the-internet">More info</a></p>
+			</div>
 
 			<div class="button-stack" role="navigation">
 
@@ -59,21 +43,12 @@ const faviconSrc = isPrideMonth ? '/images/transparent.svg' : '/images/transpare
 				{activeLinks.map(l => <LinkButton {...l} />)}
 				</Dropdown>
 
-				<Dropdown title="Don't use often:">
-				{rareLinks.map(l => <LinkButton {...l} />)}
-				</Dropdown>
-
 				<Dropdown title="Affiliate Links" open>
 				{affiliateLinks.map(l => <LinkButton {...l} />)}
 				</Dropdown>
 
 				<div class="contact-info">
-					<a href="https://www.jestr.gg/splewsh/media-kit">Want to work with me?</a>
-					<a href="mailto:splewsh@proton.me">splewsh@proton.me</a>
-					<div class="discord-link">
-						<img class="icon" src="/images/icons/discord.svg" alt="Discord" />
-						<span>: @splewshyt</span>
-					</div>
+					<a href="mailto:thomas@sublingo.uk">thomas@sublingo.uk</a>
 				</div>
 			</div>
 		</div>

@@ -271,13 +271,18 @@ a:hover {
 	margin: 0 0 1rem 0;
 }
 
-.discord-link {
+.archival {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	gap: 0;
+	padding: 0;
+	margin: 0 0 2rem 0;
 }
 
-.discord-link img {
+.archival p {
+	font-size: 1.5rem;
+	padding: 0;
 	margin: 0;
 }
